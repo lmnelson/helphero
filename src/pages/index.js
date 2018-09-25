@@ -28,8 +28,8 @@ const IndexPage = () => (
               it most.
             </p>
           </div>
-          <div className="col-xs-12 col-sm-4">
-            <div className="masthead__video" />
+          <div className="col-xs-12 col-sm-5 col-sm-offset-1">
+            <div className="video-placeholder" />
           </div>
         </div>
       </div>
