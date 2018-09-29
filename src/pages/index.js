@@ -4,6 +4,8 @@ import iconDonation from '../images/ic_donation.svg'
 import iconDispatch from '../images/ic_dispatched.svg'
 import iconMessage from '../images/ic_inboxVideo.svg'
 import Button from '../components/Button'
+import Footer from '../components/Footer'
+import Link from 'gatsby-link'
 
 import img_hero from '../images/help_hero_tshirt.png'
 import img_goods from '../images/goods.png'
@@ -29,7 +31,7 @@ const IndexPage = () => (
             </p>
           </div>
           <div className="col-xs-12 col-sm-5 col-sm-offset-1">
-            <div className="video-placeholder" />
+            {/* <div className="video-placeholder" /> */}
           </div>
         </div>
       </div>
@@ -39,31 +41,41 @@ const IndexPage = () => (
       subtitle="- Delivering help with the click of a button -"
     >
       <div className="howItWorks">
-        <div className="howItWorks__section howItWorks__step1">
-          <img src={iconDonation} />
-          <h5>Make a Donation</h5>
-          <p>
-            Easily make a donation for no less than $5 using the HelpHero
-            website.
-          </p>
-        </div>
-
-        <div className="howItWorks__section howItWorks__step2">
-          <img src={iconDispatch} />
-          <h5>A HelpHero is Dispatched</h5>
-          <p>
-            A HelpHero is dispatched to help an individual in need and is
-            equipped with a care package funded by your support.
-          </p>
-        </div>
-
-        <div className="howItWorks__section howItWorks__step3">
-          <img src={iconMessage} />
-          <h5>Recieve a Personalized Message</h5>
-          <p>
-            A personalized video will be delivered to your email so you can see
-            exactly how your money was put to use.
-          </p>
+        <div className="row">
+          <div className="col-sm-4">
+            <div className="howItWorks__section howItWorks__step1">
+              <h5 className="howItWorks__sectionTitle">1. Make a Donation</h5>
+              <img src={iconDonation} />
+              <p>
+                Easily make a donation for no less than $5 using the HelpHero
+                website.
+              </p>
+            </div>
+          </div>
+          <div className="col-sm-4">
+            <div className="howItWorks__section howItWorks__step2">
+              <h5 className="howItWorks__sectionTitle">
+                2. A HelpHero is Dispatched
+              </h5>
+              <img src={iconDispatch} />
+              <p>
+                A HelpHero is dispatched to help an individual in need and is
+                equipped with a care package funded by your support.
+              </p>
+            </div>
+          </div>
+          <div className="col-sm-4">
+            <div className="howItWorks__section howItWorks__step3">
+              <h5 className="howItWorks__sectionTitle">
+                3. Recieve a Personalized Message
+              </h5>
+              <img src={iconMessage} />
+              <p>
+                A personalized video will be delivered to your email so you can
+                see exactly how your money was put to use.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </Section>
@@ -137,7 +149,7 @@ const IndexPage = () => (
               </div>
             </div>
             <Button classNames="button--primary button--section">
-              View More Videos
+              View More HelpHero Videos
             </Button>
           </div>
         </div>
@@ -158,27 +170,13 @@ const IndexPage = () => (
               worldwide in the future. By starting
             </p>
             <Button classNames="button--section button--secondary">
-              Learn More
+              How to Become a HelpHero
             </Button>
           </div>
         </div>
       </div>
     </section>
-    <footer className="footer">
-      <div className="container">
-        <div className="row">
-          <div className="col-sm-4">
-            <p>Hello</p>
-          </div>
-          <div className="col-sm-4">
-            <p>Hello</p>
-          </div>
-          <div className="col-sm-4">
-            <p>Hello</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <Footer />
   </div>
 )
 

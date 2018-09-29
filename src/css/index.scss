@@ -28,6 +28,7 @@ body {
   max-width: $wrapper;
   margin: 0 auto;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 a {
   text-decoration: none;
@@ -44,12 +45,6 @@ p {
   font-size: 16px;
   line-height: 1.5;
   color: $darkPurple;
-}
-h5 {
-  font-size: 18px;
-  font-family: $fontSerif;
-  color: $darkPurple;
-  margin-bottom: 0;
 }
 .section__heading {
   font-size: 40px;
@@ -191,10 +186,18 @@ h5 {
 }
 //how it works
 .howItWorks {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-column-gap: 50px;
+  // display: grid;
+  // grid-template-columns: auto auto auto;
+  // grid-column-gap: 50px;
   margin-top: 40px;
+}
+.howItWorks__sectionTitle {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: $fontSerif;
+  color: $darkPurple;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .howItWorks__section {
   position: relative;
@@ -202,15 +205,12 @@ h5 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  min-height: 300px;
-  background-color: #eee;
+  padding-left: 30px;
+  padding-right: 30px;
   img {
     width: 200px;
-  }
-  h5,
-  p,
-  img {
-    display: none;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 }
 .howItWorks__section:after {

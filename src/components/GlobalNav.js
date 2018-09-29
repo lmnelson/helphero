@@ -30,7 +30,7 @@ const GlobalNav = () => (
         </Link>
       </li>
       <li>
-        <Button classNames="button--secondary">Make a Donation</Button>
+        <Button classNames="button--secondary">Create a Free Account</Button>
       </li>
     </ul>
   </nav>
